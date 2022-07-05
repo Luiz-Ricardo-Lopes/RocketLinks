@@ -22,8 +22,10 @@ body {
 }
 
 img {
+  border: 4px #4263eb solid;
   width: 10rem;
   height: 10rem;
+  padding: 0.37rem;
   border-radius: 50%;
 
   margin-bottom: 2.4rem;
@@ -40,11 +42,12 @@ h1 {
 }
 
 p {
-  font-weight: 400;
+  font-family: 'Roboto Mono', monospace;
   font-size: 1.8rem;
   line-height: 150%;
 
   color: rgba(0, 8, 47, 0.8);
+  opacity: 0.8;
 
   margin-bottom: 4.8rem;
 }
@@ -52,6 +55,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  list-style: none;
 }
 
 li {
@@ -69,8 +73,9 @@ li {
   background: #4263eb;
   border-radius: 6px;
 
-  text-decoration: none;
   text-transform: uppercase;
+
+  transition: background 400ms;
 }
 li:hover {
   background: #364fc7;
@@ -87,9 +92,16 @@ footer {
   line-height: 1.6rem;
 
   color: rgba(0, 8, 47, 0.6);
+  opacity: 0.6;
   margin-top: 4.8rem;
+
+  transition: opacity 400ms;
 }
 
 footer a {
   color: rgba(0, 8, 47, 0.6);
+}
+
+footer:hover {
+  opacity: 1;
 }
