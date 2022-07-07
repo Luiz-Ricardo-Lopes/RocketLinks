@@ -7,16 +7,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
-
     <title>RocketLinks</title>
   </head>
   <body>
+    <button id="theme">Temas</button>
+    <div id="menu" class="menu">
+      <input type="radio" id="dark-blue" value="dark-blue" />
+      <label for="dark-blue">Dark-Blue</label>
+
+      <input type="radio" id="dark-pink" value="dark-pink" />
+      <label for="dark-pink">Dark-Pink</label>
+
+      <input type="radio" id="pink" value="pink" />
+      <label for="pink">Pink</label>
+    </div>
+
     <img
       src="https://github.com/Luiz-Ricardo-Lopes.png"
       alt="Imagem de Luiz Ricardo Lopes"
@@ -54,5 +65,7 @@
       Feito com ❤️ pela
       <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a>
     </footer>
+
+    <script src="/main.js" type="module"></script>
   </body>
 </html>

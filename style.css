@@ -8,6 +8,13 @@ root {
   font-size: 62.5%;
 }
 
+html {
+  --bg-color: #edf2ff;
+  --text-color: #00082f;
+  --primary-color: #4263eb;
+  --primary-color-dark: #364fc7;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   width: 30rem;
@@ -18,11 +25,53 @@ body {
   align-items: center;
   flex-direction: column;
 
-  background: #e5e5e5;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+#theme {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  padding: 0.6rem;
+
+  color: var(--text-color);
+
+  border-radius: 4px;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+label {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.menu {
+  visibility: hidden;
+}
+
+body.dark-blue {
+  --bg-color: #00082f;
+  --text-color: #ffffff;
+  --primary-color: #4263eb;
+}
+
+body.dark-pink {
+  --bg-color: #1f000b;
+  --text-color: #fff0f6;
+  --primary-color: #d6336c;
+  --primary-color-dark: #a61e4d;
+}
+
+body.pink {
+  --bg-color: #ffffff;
+  --text-color: #00082f;
+  --primary-color: #d6336c;
+  --primary-color-dark: #a61e4d;
 }
 
 img {
-  border: 4px #4263eb solid;
+  border: var(--primary-color) 4px solid;
   width: 10rem;
   height: 10rem;
   padding: 0.37rem;
@@ -36,8 +85,6 @@ h1 {
   font-size: 3.2rem;
   line-height: 3.8rem;
 
-  color: #00082f;
-
   margin-bottom: 0.8rem;
 }
 
@@ -46,7 +93,7 @@ p {
   font-size: 1.8rem;
   line-height: 150%;
 
-  color: rgba(0, 8, 47, 0.8);
+  color: var(--text-color);
   opacity: 0.8;
 
   margin-bottom: 4.8rem;
@@ -70,7 +117,7 @@ li {
   font-size: 1.4rem;
   line-height: 150%;
 
-  background: #4263eb;
+  background: var(--primary-color);
   border-radius: 6px;
 
   text-transform: uppercase;
@@ -78,7 +125,7 @@ li {
   transition: background 400ms;
 }
 li:hover {
-  background: #364fc7;
+  background: var(--primary-color-dark);
 }
 
 a {
@@ -91,7 +138,7 @@ footer {
   font-size: 1.2rem;
   line-height: 1.6rem;
 
-  color: rgba(0, 8, 47, 0.6);
+  color: var(--text-color);
   opacity: 0.6;
   margin-top: 4.8rem;
 
@@ -99,7 +146,7 @@ footer {
 }
 
 footer a {
-  color: rgba(0, 8, 47, 0.6);
+  color: var(--text-color);
 }
 
 footer:hover {
